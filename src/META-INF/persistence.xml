@@ -5,14 +5,19 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org
 	<persistence-unit name="CadastroProduto" transaction-type="RESOURCE_LOCAL">
 	
 	<provider>org.hibernate.ejb.HibernatePersistente</provider>
-	
+	<class>br.com.entity.Cor</class>
+	<class>br.com.entity.Grupo</class>
+	<class>br.com.entity.Subgrupo</class>
+	<class>br.com.entity.Produto</class>
+	<class>br.com.entity.Tamanho</class>
+	<class>br.com.entity.Usuario</class>
+		
 	<properties>
 			
 			<property name="javax.persisten.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/produtodb" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="barbieri" />
-	
 	
 	</properties>
 	
